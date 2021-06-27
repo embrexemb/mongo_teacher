@@ -12,7 +12,7 @@ app = Flask(__name__)
 #app.config['MONGO_URI'] = environ.get('mongodb+srv://Scott:nN5GELRQucw.qJb@cluster0.w73ay.mongodb.net/mars_app?retryWrites=true&w=majority')
 #mongo = PyMongo(app, uri="mongodb+srv://Scott:nN5GELRQucw.qJb@cluster0.w73ay.mongodb.net/notepad?retryWrites=true&w=majority")
 #app.config['MONGO_URI'] = 'mongodb://localhost:27017/notepad'
-app.config['MONGO_URI'] = environ.get(MONGO_URI)
+app.config['MONGO_URI'] = environ.get('MONGO_URI')
 
 # database setup
 #db = SQLAlchemy(app)
