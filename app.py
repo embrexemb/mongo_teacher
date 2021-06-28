@@ -26,7 +26,7 @@ def index():
 
 @app.route('/api/notes/mongo')
 def note_mongo():
-    notes = mongo.db.notepad.find()
+    notes = mongo.db.tasks.find()
     data = []
 
     for note in notes:
